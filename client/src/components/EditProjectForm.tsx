@@ -4,10 +4,19 @@ import { GET_PROJECT } from "../queries/projectQuery";
 import { UPDATE_PROJECT } from "../mutations/projectMutation";
 import { Project } from "../../types";
 
+    
+function FunStatus(){
+    return "new" || "progress" ||"completed" 
+}
+
+type ReturnStatus =ReturnType<typeof FunStatus>
+
+// type ReturnStatus = "new" | "progress" | "completed" | Status;
+
 export default function EditProjectForm({ project }: {project: Project}) {
   const [name, setName] = useState(project.name);
   const [description, setDescription] = useState(project.description);
-  const [status, setStatus] = useState(() => {
+  const [status, setStatus] = useState<ReturnStatus>(() => {
     switch (project.status) {
       case "Not Started":
         return "new";

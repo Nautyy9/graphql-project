@@ -13,17 +13,12 @@ export  interface ClientData {
     projects : Project[];
   }
   
-enum Status {
-  "Not Started",
-  "In Progress",
-  Completed
-}
 
 export interface Project{
   name: string
   id: string
   description : string
-  status: Status,
+  status: "Not Started" | "In Progress" | "Completed",
   clientId : {
     id: Client.id
   }
