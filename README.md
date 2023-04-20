@@ -102,20 +102,18 @@ Please adhere to this project's `code of conduct`.
 ## Screenshots
 
 #### Home Page
-![App Preview](ss\ss1.png )
+![App Preview](/ss/ss1.png )
 
 #### Modal to add client
-![App Preview](ss\ss2.png )
+![App Preview](/ss/ss2.png )
 #### Modal to add project
 
-![App Preview](ss\ss3.png )
+![App Preview](/ss/ss3.png )
 
 #### Project Review
-![App Preview](ss\ss4.png )
+![App Preview](/ss/ss4.png )
 
 
 ## Author
 
 @BradTraversy - https://github.com/bradtraversy
-
-Repo Link - https://github.com/bradtraversy/project-mgmt-graphql
